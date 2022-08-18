@@ -1,0 +1,53 @@
+// файл обнуляющих стилей
+@import "nullstyle.scss";
+
+//перменные
+$fz:80px;
+$color_1:#000;
+$color_2:#fff;
+
+//шаблон
+.tpldorder{
+	border-bottom: 5px dashed black;
+}
+
+//миксины
+@mixin  fontz($f, $c) {
+	font-size: $f;
+	color: $c;
+}
+
+.block{
+	width: 300px /960px *100%;
+	background-color: grey;
+	padding: 30px;
+	font-size: $fz;
+	line-height: 60px;
+	color: red;
+	
+	.block__text{
+		font-size: $fz;
+		color: red;
+		.span{
+			color: green;
+		}
+	}
+}
+.link{
+	@include fontz(200px, green);
+	color: blue;
+	text-decoration: underline; 
+	font-size: 20px;
+		.block &{
+			font-size: $fz;
+		}
+	&:hover{
+		color:red;
+
+	}
+			@extend .tpldorder;
+	}
+	.link-2{
+		@extend .tpldorder;
+		@include fontz(200px, green)
+	}
