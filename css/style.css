@@ -41,18 +41,19 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
 .example-block {
-padding: 10px;    
-margin: 20px;
-border: 1px solid #000;
-    }
+font-size: 30px;
+
+visibility: hidden;
+
+padding: 15px;
+margin: 100px; 
+}
 .example-string {
-    display: inline-block;
-    width: 500px;
-    padding: 20px;
-     border: 1px solid #000;  
+    outline: 5px solid #000;
+font-size: 30px;
 }
 
 .image{
-    margin: 200px;
-height: 100px;
+
+
 } 
