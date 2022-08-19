@@ -37,23 +37,33 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
+/*
+https://fls.guru/cssbackground.html
+*/
+body{
+    
+    padding: 150px 30px 30px 30px;
+    font-family: Arial;
+  
+}
 
-
+.list {
+    margin: 0 0 50px 0;
+}
+.list li{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+    background: url(..img/blueberry.jpg) left no-repeat;
+    padding: 0px 0px 0px 30px;
+}
+/*
+по идее запись сверху должна создавать иконки для списков(галочки и тп), но чет не работает
+*/
 
 .example-block {
-font-size: 30px;
-
-visibility: hidden;
-
-padding: 15px;
-margin: 100px; 
+background:url(../img/blueberry.jpg) 0 0/contain no-repeat;
+;
+height: 300px;
+border-radius: 15px;
+box-shadow: 0 0 10px #000;
 }
-.example-string {
-    outline: 5px solid #000;
-font-size: 30px;
-}
-
-.image{
-
-
-} 
