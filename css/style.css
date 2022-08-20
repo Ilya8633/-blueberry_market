@@ -37,33 +37,99 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
-/*
-https://fls.guru/cssbackground.html
-*/
+
 body{
-    
-    padding: 150px 30px 30px 30px;
-    font-family: Arial;
-  
+    padding: 50px;
 }
+
+
+.block {
+margin: 0 0 40px 0;
+}
+
+.block p:nth-child(3){
+    background-color: yellow;
+}
+
+.block p:nth-child(3):hover{
+   background-color: red;
+}
+
+
+.block p{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 20px 0px;
+}
+.link {
+    color: red;
+
+}
+
+.link:visited{
+    color: green;
+}
+
+.link:hover{
+text-decoration: underline;
+color: blue;
+
+}
+
+.link:active{
+        color: yellow;
+
+}
+
+
+.textinput {
+    border: 1px solid grey;
+    height: 50px;
+    padding: 0px 15px;
+    font-size: 18px;
+    width: 300px;
+    margin: 0px 0px 15px 0px;
+}
+
+.textinput:focus{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+}
+.textbutton {
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-color: blueviolet;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+}
+
+.textbutton:hover{
+    background-color: black;
+    color: yellow;
+}
+
+.textbutton:active{
+    background-color: white;
+}
+
 
 .list {
-    margin: 0 0 50px 0;
 }
+
 .list li{
-    font-size: 20px;
-    margin: 0 0 15px 0;
-    background: url(..img/blueberry.jpg) left no-repeat;
-    padding: 0px 0px 0px 30px;
+    font-size: 18px;
+    margin: 0px 0px 15px 0px;
 }
 /*
-по идее запись сверху должна создавать иконки для списков(галочки и тп), но чет не работает
+.list li:first-child{
+    color: green;
+}
+.list li:last-child{
+    color: grey;
+}
 */
-
-.example-block {
-background:url(../img/blueberry.jpg) 0 0/contain no-repeat;
-;
-height: 300px;
-border-radius: 15px;
-box-shadow: 0 0 10px #000;
+.list li:nth-child(odd){
+        text-transform: uppercase;
 }
