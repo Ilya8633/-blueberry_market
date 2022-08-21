@@ -28,8 +28,12 @@ font-size: 14px;
 input, button, textarea{font-family: inherit;}
 
 input::-ms-clear {display: none;}
+/*убирает крестик в форме*/
+
 button {cursor: pointer;}
+
 button::-moz-focus-inner {padding: 0; border: 0;}
+/*убирает отступы*/
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
@@ -38,98 +42,44 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
+
 body{
-    padding: 50px;
+    padding: 30px;
 }
-
-
-.block {
-margin: 0 0 40px 0;
-}
-
-.block p:nth-child(3){
-    background-color: yellow;
-}
-
-.block p:nth-child(3):hover{
-   background-color: red;
-}
-
-
-.block p{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0px 0px 20px 0px;
-}
-.link {
-    color: red;
-
-}
-
-.link:visited{
-    color: green;
-}
-
-.link:hover{
-text-decoration: underline;
-color: blue;
-
-}
-
-.link:active{
-        color: yellow;
+.text {
+    font-size: 24px;
+    line-height: 33px;
+margin: 0px 0px 30px 0px;
 
 }
 
 
-.textinput {
-    border: 1px solid grey;
-    height: 50px;
-    padding: 0px 15px;
-    font-size: 18px;
-    width: 300px;
-    margin: 0px 0px 15px 0px;
-}
 
-.textinput:focus{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+.text::first-letter{
+font-size: 50px;
 
 }
-.textbutton {
-    display: block;
-    height: 50px;
-    width: 300px;
-    background-color: blueviolet;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 0px 0px 30px 0px;
+
+
+.list{
+
 }
-
-.textbutton:hover{
-    background-color: black;
-    color: yellow;
-}
-
-.textbutton:active{
-    background-color: white;
-}
-
-
-.list {
-}
-
 .list li{
-    font-size: 18px;
-    margin: 0px 0px 15px 0px;
+    font-size: 24px;
+    line-height: 33px;
+margin: 0 0 30px 0;
 }
-/*
-.list li:first-child{
-    color: green;
+
+.list li:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
 }
-.list li:last-child{
-    color: grey;
-}
-*/
-.list li:nth-child(odd){
-        text-transform: uppercase;
+.list li:hover:before{
+    background-color: yellow;
+
 }
