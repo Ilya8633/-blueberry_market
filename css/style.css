@@ -42,44 +42,26 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 
-
 body{
     padding: 30px;
 }
-.text {
-    font-size: 24px;
-    line-height: 33px;
-margin: 0px 0px 30px 0px;
 
-}
-
-
-
-.text::first-letter{
-font-size: 50px;
-
-}
-
-
-.list{
-
+.list {
+    font-size: 18px;
 }
 .list li{
-    font-size: 24px;
-    line-height: 33px;
-margin: 0 0 30px 0;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    padding: 0px 0px 0px 30px;
+
 }
 
-.list li:before{
+.list li::before{
     content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-    display: inline-block;
-    margin: 0px 10px 0px 0px;
-}
-.list li:hover:before{
-    background-color: yellow;
-
+    background: url('../img/blueberry.jpg')0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -6px;
+    left: 0;
 }
